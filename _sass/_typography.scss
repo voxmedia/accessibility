@@ -1,0 +1,30 @@
+body {
+  color: $color-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  margin-bottom: .5em;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+  &:hover {
+    color: $color-link-hover;
+    transition: 200ms color;
+  }
+}

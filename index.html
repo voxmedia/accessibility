@@ -2,14 +2,54 @@
 layout: default
 ---
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2> {{ post.title }}</h2>
-      <section>
+<header>
+  <div class="l-wrapper">
+    <h1>Accessibility Guidelines</h1>
+  </div>
+</header>
+
+<section class="l-wrapper">
+  <nav class="c-nav l-segment">
+    <ul class="c-nav__items">
+      {% for post in site.categories.docs %}
+        <li class="c-nav__item"><a href="#{{ post.title }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% for post in site.categories.docs %}
+    <section class="l-segment" id="{{ post.title }}">
+      <h2>{{ post.title }}</h2>
+      <div>
         {{ post.content }}
-      </section>
-    </li>
+      </div>
+    </section>
   {% endfor %}
-</ul>
+</section>
+
+<header>
+  <div class="l-wrapper">
+    <h1>Why it matter</h1>
+  </div>
+</header>
+
+<section class="l-wrapper l-segment">
+  {% for post in site.categories.why %}
+    {{ post.content }}
+  {% endfor %}
+</section>
+
+<header>
+  <div class="l-wrapper">
+    <h1>Process</h1>
+  </div>
+</header>
+
+<section class="l-wrapper l-segment">
+  {% for post in site.categories.process %}
+    {{ post.content }}
+  {% endfor %}
+</section>
+
+<section>
+</section>
 

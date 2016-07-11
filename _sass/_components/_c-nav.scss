@@ -1,0 +1,15 @@
+.c-nav {
+  text-align: center;
+  text-transform: uppercase;
+  &__item {
+    border-bottom: 4px solid transparent;
+    display: inline-block;
+    margin: 0 .8em;
+    padding-bottom: .2em;
+    transition: 200ms border-bottom;
+    &:hover {
+      border-bottom: 4px solid $color-link-hover;
+      transition: 200ms border-bottom;
+    }
+  }
+}
