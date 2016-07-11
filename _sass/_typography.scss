@@ -1,30 +1,90 @@
 body {
   color: $color-body;
+  font-family: $font-body;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.2;
+  @media(min-width: $break-medium-small) {
+    font-size: 18px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 800;
+  font-family: $font-headline;
+  font-weight: 700;
   margin-bottom: .5em;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3.375em;
   text-align: center;
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2.25em;
 }
 
 h3 {
-  font-size: 2.5em;
+  font-family: $font-body;
+  font-size: 1em;
+  margin: .8em 0;
+  text-transform: uppercase;
 }
 
 a {
+  border: 1px solid transparent;
   color: $color-link;
+  outline: none;
+  padding: .1em;
   text-decoration: none;
+  transition: all 200ms;
   &:hover {
     color: $color-link-hover;
-    transition: 200ms color;
   }
+  &:focus {
+    border: 1px solid rgba(81, 203, 238, 1);
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  }
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1.2em;
+}
+
+li {
+  position: relative;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  height: 10px;
+  left: -20px;
+  opacity: 0;
+  position: absolute;
+  top: 7px;
+  width: 10px;
+  z-index: 1;
+}
+
+label:before {
+  border: 1px solid #3b3b3b;
+  content: '';
+  cursor: pointer;
+  height: 10px;
+  left: -20px;
+  position: absolute;
+  top: 7px;
+  transition: all 200ms;
+  width: 10px;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background: #3b3b3b;
+}
+
+input[type="checkbox"]:focus + label:before {
+  transition: all 200ms;
+  border: 1px solid rgba(81, 203, 238, 1);
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 }

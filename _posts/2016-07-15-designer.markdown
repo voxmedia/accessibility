@@ -5,4 +5,44 @@ date:   2016-07-11
 categories:  docs
 ---
 
-This is for designer docs
+### Color and Type
+- <input type="checkbox" id="1"><label for="1">Make sure there is enough contrast between text and its background color
+    According to the WCAG, the contrast ratio between text and the text’s background should be at least 4.5 to 1. If your font is at least 24 px or 19 px bold, the minimum drops to 3 to 1 (though, worth noting that this is a little fuzzy because numbered sizes aren’t always reflective of the visual size type). Be especially careful of text over images.
+  </label>
+
+- <input type="checkbox" id="2"><label for="2">This guideline helps users with low vision, color blindness, or worsening vision see and read the text on your screen.
+  </label>
+
+- <input type="checkbox" id="3"><label for="3">Color should not be the only indicator or prompt for important information
+  </label>
+
+- <input type="checkbox" id="4"><label for="4">There should be another indicator (such as icons to accompany color coding, or an underline on linked text) so that people who cannot easily distinguish colors will be able to understand and use your content.
+  </label>
+
+- <input type="checkbox" id="5"><label for="5">Pair values of colors together, not only hues, to increase contrast
+    When you strip out the color information from two hues and compare the values, there may not be much difference. Pairing different values creates contrast.
+  </label>
+
+### Feedback and Interactions
+Sensory characteristics should not be the only indicator for understanding and operating content
+You should not rely solely on images, shape, size, visual location, orientation, or sound to indicate important instructions for operating or understanding content (ex. “See the image above”). Instead, use a combination of positioning, color, and labeling to identify content.
+
+Design focus states to help users navigate and understand where they are
+Your designs should never actively hide focus states. When people use the keyboard to navigate, your product should include highly visible focus states.
+
+Help users understand inputs, and help them avoid and correct mistakes
+Labels should never completely go away when the focus is inside of an input. Users should always have clear instructions on what they should be inputting.
+Put error messages in text that explain the error and how to fix the error. Never rely solely on color to indicate errors.
+
+### Copy
+Write good alt text for your images
+Users with low vision often make use of a talking browser to “read” the web. These specialized browsers convert text to speech so that a user can hear the words on a site. When a talking browser lands on an image, it looks for alt text that it can read aloud; if it finds none, it will often just say “image,” leaving the user in the dark as to what the image is and how it matters to the story.
+Describe all of the elements that explain what’s happening in the image, rather than just setting the alt text to be something like, “photograph”
+If you have to use an image of text, be sure to describe the design if relevant, as well as all of the words in the image. (Ex: Whiteboard drawing of the quote “This is a quote”)
+
+If an experience cannot be made accessible, create another route for users to get that information
+It can be difficult to make certain components (like an SVG map) into accessible experiences. In those cases, consider creating an additional screen reader-friendly experience, or at the very least, describe the experience to users.
+
+Be as consistent and clear as possible in layout and copy
+Be consistent across functions, placement, and labeling. Components with the same functionality should work and be identified consistently. Use section headings to organize content.
+Be clear in writing; avoid jargon and idioms

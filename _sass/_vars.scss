@@ -1,8 +1,21 @@
+@import 'https://fonts.googleapis.com/css?family=Lora:700|Open+Sans:300,700';
+
 // Colors
 $color-body: #3b3b3b;
 $color-link: #1e6931;
 $color-link-hover: darken($color-link, 20%);
 
+// Fonts
+$font-body: 'Open Sans', Helvetica, sans-serif;
+$font-headline: 'Lora', Georgia, serif;
 
 // layout
 $page-width: 900px;
+
+// Break points
+$break-small: 400px;
+$break-medium-small: 600px;
+$break-medium: 728px;
+$break-large-medium: 880px;
+$break-large: 950px;
+$break-xlarge-large: 1080px;
