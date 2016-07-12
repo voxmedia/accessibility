@@ -49,15 +49,15 @@
   }
 
   input[type="checkbox"]:checked + b:before {
-    background-color: $color-link;
+    background-color: $color-link-light;
     background-image: url('/assets/check.svg');
     border-color: $color-link;
   }
 
   input[type="checkbox"]:focus + b:before {
     transition: all 200ms;
-    border: 1px solid rgba(81, 203, 238, 1);
-    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid $color-dark-green;
+    box-shadow: 0 2px 8px $color-light-green;
   }
 
   textarea {
