@@ -5,6 +5,7 @@ date:   2016-07-11
 categories:  why
 ---
 
+
 ### As journalists, advertisers, producers, and creators, content is at our core at Vox Media. And we want to ensure that everyone—regardless of ability, situation, or context—can access it.
 
 This idea inspired us to outline a few guiding principles to help us convey our philosophy on accessibility. We hope these principles can help continue the conversation on why accessibility matters and encourage us to put what we preach into practice.
@@ -26,3 +27,4 @@ Accessibility may seem like a lofty goal, but it’s really just part of doing g
 ### 4. Accessibility is everyone’s responsibility.
 
 Accessibility is not a checklist item that only needs to be considered in some projects, or at the end of a process. Rather, these practices should be woven into every step of a project and role in a team. An accessible product stems from everyone on a team owning and shouldering the responsibility. It's part of our jobs as creators.
+
