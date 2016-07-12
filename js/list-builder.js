@@ -11,6 +11,14 @@ new Clipboard('.c-guidelines__copy');
     return false;
   }
 
+  var sections = {
+    designers: "Designers",
+    editorial: "Editorial",
+    engineers: "Engineers",
+    project: "Project Managers",
+    qa: "Quality Assurance"
+  }
+
   var formatters = {
     github: "\n- [ ] ",
     markdown: "\n - ",
@@ -51,10 +59,6 @@ new Clipboard('.c-guidelines__copy');
     })
   }
 
-  function titleCase(str) {
-    return str.charAt(0).toUpperCase() + str.substr(1);
-  }
-
   function formatPreview(start) {
     var activeSection = "";
 
@@ -62,9 +66,14 @@ new Clipboard('.c-guidelines__copy');
       var currentSection = curr[1].split("-")[0];
       var str = "";
 
-      if (activeSection !== currentSection) {
+      if (activeSection !== currentSection ) {
         activeSection = currentSection;
-        str = "## " + titleCase(currentSection);
+        if (prev !== curr) {
+          str = outputType === "plaintext" ? "\n\n" : "\n\n## ";
+        } else {
+          str = outputType === "plaintext" ? str : "## "
+        }
+        str += sections[activeSection];
       }
 
       str += start + curr[0];

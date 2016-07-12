@@ -5,6 +5,12 @@
 
   label {
     font-size: 1.25em;
+
+    // handle the sticky nav when anchor links are clicked
+    &:target {
+      display: inline-block;
+      padding-top: 60px;
+    }
   }
 
   ul {
@@ -31,6 +37,10 @@
     top: 8px;
     width: 15px;
     z-index: 1;
+  }
+
+  b {
+    position: relative;
   }
 
   b:before {
