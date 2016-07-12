@@ -43,7 +43,7 @@ function $$(sel) {
     var newActive = []
     checkboxes.forEach(function(c) {
       if (c.checked) {
-        newActive.push(c.parentNode.innerText);
+        newActive.push(c.parentNode.querySelector('p').innerText);
       }
     });
     active = newActive;
