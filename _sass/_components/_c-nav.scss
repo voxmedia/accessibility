@@ -7,18 +7,24 @@
   text-transform: uppercase;
   width: 100%;
   z-index: 10000;
+  line-height: 0;
+  @media(max-width: $break-medium-small) {
+    position: relative;
+  }
 
   &.is-fixed {
     position: fixed;
     top: 0;
+    @media(max-width: $break-medium-small) {
+      position: relative;
+    }
   }
 
   a {
-    padding: 1em .8em;
-    display: inline-block;
-    color: $color-link-light;
     border-color: transparent;
-    overflow: hidden;
+    color: $color-link-light;
+    display: inline-block;
+    padding: 1.5em .8em;
     &:before {
       background-color: $color-link;
       bottom: -100%;
@@ -40,11 +46,14 @@
       }
     }
   }
-  &__items {
-    overflow: hidden;
-  }
 
   &__item {
     display: inline-block;
+    overflow: hidden;
+    margin-bottom: 0;
+    @media(max-width: $break-medium-small) {
+      border-bottom: 1px solid lighten($color-body, 10%);
+      display: block;
+    }
   }
 }

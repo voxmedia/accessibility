@@ -1,7 +1,7 @@
 body {
   color: $color-body;
   font-family: $font-body;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.2;
   @media(min-width: $break-medium-small) {
@@ -16,12 +16,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3.375em;
+  font-size: 2.25em;
   text-align: center;
+  @media(min-width: $break-medium-small) {
+    font-size: 3.375em;
+  }
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 1.5em;
+  @media(min-width: $break-medium-small) {
+    font-size: 2.25em;
+  }
 }
 
 h3 {
@@ -63,11 +69,12 @@ button {
 
 p {
   line-height: 1.5;
-  margin-bottom: 1.2em;
+  margin-bottom: .5em;
 }
 
 li {
   position: relative;
+  margin-bottom: 1em;
 }
 
 strong {

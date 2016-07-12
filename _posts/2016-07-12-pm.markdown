@@ -1,8 +1,0 @@
----
-layout: post
-title:  "Project Manager"
-date:   2016-07-11
-categories:  docs
----
-
-This is for project manager docs
