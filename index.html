@@ -19,15 +19,18 @@ layout: default
   </ul>
 </nav>
 
-<section class="l-content-wrapper c-guidelines">
-  {% for post in site.categories.docs %}
-    <section class="l-segment" id="{{ post.title }}">
-      <h2>{{ post.title }}</h2>
-      <div>
-        {{ post.content }}
-      </div>
-    </section>
-  {% endfor %}
+<section class="l-wrapper c-guidelines">
+  {% include designer.html %}
+
+  {% include engineers.html %}
+
+  {% include pm.html %}
+
+  {% include qa.html %}
+
+  {% include editorial.html %}
+
+  {% include output.html %}
 </section>
 
 <header class="c-header">
