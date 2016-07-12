@@ -2,30 +2,101 @@
 
   <h2>Designers</h2>
 
-  <h3>Color and Type</h3>
+<!--   <h3>Color and Type</h3> -->
 
   <ul>
     <li>
       <label>
       <input type="checkbox"><b></b>
-        Make sure there is enough contrast between text and its background color
+      <div class="guideline"> Make sure there is enough contrast between text and its background color</div>
       </label>
-
-      <p>According to the WCAG, the contrast ratio between text and the text’s background should be at least 4.5 to 1. If your font is at least 24 px or 19 px bold, the minimum drops to 3 to 1 (though, worth noting that this is a little fuzzy because numbered sizes aren’t always reflective of the visual size type). Be especially careful of text over images.</p>
+      </br>
+      <p><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">According to the WCAG</a>, the contrast ratio between text and the text’s background should be at least 4.5 to 1. If your font is at least 24 px or 19 px bold, the minimum drops to 3 to 1 (though, worth noting that this is a little fuzzy because numbered sizes aren’t always reflective of the visual size type). Be especially careful of text over images.</p>
+      <div class="source">Source: <a href="https://medium.com/salesforce-ux/7-things-every-designer-needs-to-know-about-accessibility-64f105f0881b#.n2hwslspv">Salesforce UX</a></div>
+      </br>
     </li>
 
     <li>
-      <label>
-        <input type="checkbox"><b></b>
-        This guideline helps users with low vision, color blindness, or worsening vision see and read the text on your screen.
+      <input type="checkbox"><b></b>
+      <div class="guideline">Don't indicate important information using color alone</div>
       </label>
+      </br>
+      <p>There should be another indicator (such as icons to accompany color coding, or an underline on linked text) so that people who cannot easily distinguish colors will be able to understand and use your content.</p>
+      <div class="source">Source: <a href="https://dcp.ucla.edu/2011/04/tips-and-tools-for-creating-accessible-color-schemes/">UCLA</a></div>
+      </br>
     </li>
 
     <li>
-      <label>
-        <input type="checkbox"><b></b>
-        Color should not be the only indicator or prompt for important information
+      <input type="checkbox"><b></b>
+      <div class="guideline">Pair values of colors together (not only hues) to increase contrast</div>
       </label>
+      </br>
+      <p>When you strip out the color information from two hues and compare the values, there may not be much difference. Pairing different values creates contrast.</p>
+      <div class="source">Source: <a href="https://dcp.ucla.edu/2011/04/tips-and-tools-for-creating-accessible-color-schemes/">UCLA</a></div>
+      </br>
     </li>
+
+    <li>
+      <input type="checkbox"><b></b>
+      <div class="guideline">Don't rely on sensory characteristics as the sole indicator for understanding and operating content</div>
+      </label>
+      </br>
+      <p>You should not rely solely on images, shape, size, visual location, orientation, or sound to indicate important instructions for operating or understanding content (ex. “See the image above”). Instead, use a combination of positioning, color, and labeling to identify content.</p>
+      <div class="source">Source: <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html">W3C</a></div>
+      </br>
+    </li>
+
+    <li>
+      <input type="checkbox"><b></b>
+      <div class="guideline">Design focus states to help users navigate and understand where they are</div>
+      </label>
+      </br>
+      <p>Your designs should never actively hide focus states. When people use the keyboard to navigate, your product should include highly visible focus states.</p>
+      <div class="source">Source: <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html">W3C</a></div>
+      </br>
+    </li>
+
+    <li>
+      <input type="checkbox"><b></b>
+      <div class="guideline">Help users understand inputs, and help them avoid and correct mistakes</div>
+      </label>
+      </br>
+      <p>Labels should never completely go away when the focus is inside of an input. Users should always have clear instructions on what they should be inputting. Put error messages in text that explain the error and how to fix the error. Never rely solely on color to indicate errors.</p>
+      <div class="source">Source: <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html">W3C</a></div>
+      </br>
+    </li>
+
+
+    <li>
+      <input type="checkbox"><b></b>
+      <div class="guideline">Write good alt text for your images</div>
+      </label>
+      </br>
+      <p>Users with low vision often make use of a talking browser to “read” the web. These specialized browsers convert text to speech so that a user can hear the words on a site. When a talking browser lands on an image, it looks for alt text that it can read aloud; if it finds none, it will often just say “image,” leaving the user in the dark as to what the image is and how it matters to the story. </p>
+      <p>Describe all of the elements that explain what’s happening in the image, rather than just setting the alt text to be something like, “photograph"</p>
+      <p>If you have to use an image of text, be sure to describe the design if relevant, as well as all of the words in the image. (Ex: Whiteboard drawing of the quote “This is a quote”)</p>
+      <div class="source">Source: <a href="http://chorus-blog.voxmedia.com/2015/3/31/8315251/writing-good-alt-text">Vox Media</a></div>
+      </br>
+    </li>
+
+    <li>
+      <input type="checkbox"><b></b>
+      <div class="guideline">If an experience cannot be made accessible, create another route for users to get that information</div>
+      </label>
+      </br>
+      <p>It can be difficult to make certain components (like an SVG map) into accessible experiences. In those cases, consider creating an additional screen reader-friendly experience, or at the very least, describe the experience to users.</p>
+      </br>
+    </li>
+
+    <li>
+      <input type="checkbox"><b></b>
+      <div class="guideline">Be as consistent and clear as possible in layout and copy</div>
+      </label>
+      </br>
+      <p>Be consistent across functions, placement, and labeling. Components with the same functionality should work and be identified consistently. Use section headings to organize content. Be clear in writing; avoid jargon and idioms</p>
+      <div class="source">Source: <a href="http://code.viget.com/interactive-wcag/#responsibility=content&level=aaa">Viget</a></div>
+      </br>
+    </li>
+
   </ul>
 </div>
