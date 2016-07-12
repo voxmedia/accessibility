@@ -3,6 +3,8 @@ function $$(sel) {
   return Array.prototype.slice.call(document.querySelectorAll(sel));
 }
 
+new Clipboard('.c-guidelines__copy');
+
 (function(container){ // write some JS
 
   if (!container) {
@@ -12,14 +14,13 @@ function $$(sel) {
   var checkboxes = $$('input[type="checkbox"]');
   var textarea = container.querySelector('.preview-box');
   var outputType = document.getElementById('output').value;
-  var includeLinks = document.getElementById('include_links').checked;
   var active = [];
 
   function formatPreview(start) {
     start = start ? start : "";
     var ret = active.reduce(function(prev, curr, idx){
       var str = curr[0];
-      if (includeLinks) {
+      if (outputType !== "plaintext") {
         str = str + " (More Info)[" + window.location.href + "#" + curr[1] + "]";
       }
       return idx === 0 ? start + str : prev + start + str;
@@ -57,11 +58,6 @@ function $$(sel) {
 
   document.getElementById('output').addEventListener('change', function(ev) {
     outputType = ev.target.value;
-    outputPreview();
-  });
-
-  document.getElementById('include_links').addEventListener('change', function(ev) {
-    includeLinks = ev.target.checked;
     outputPreview();
   });
 
