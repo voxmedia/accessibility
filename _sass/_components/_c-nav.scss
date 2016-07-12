@@ -24,7 +24,9 @@
     border-color: transparent;
     color: $color-link-light;
     display: inline-block;
+    overflow: hidden;
     padding: 1.5em .8em;
+    position: relative;
     &:before {
       background-color: $color-link;
       bottom: -100%;
@@ -49,7 +51,6 @@
 
   &__item {
     display: inline-block;
-    overflow: hidden;
     margin-bottom: 0;
     @media(max-width: $break-medium-small) {
       border-bottom: 1px solid lighten($color-body, 10%);
