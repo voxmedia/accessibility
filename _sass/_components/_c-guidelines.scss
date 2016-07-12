@@ -39,8 +39,14 @@
   }
 
   textarea {
+    margin: 1em 0;
     width: 100%;
     height: 200px;
   }
 
+  label {
+    font-size: .9em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 }

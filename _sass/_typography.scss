@@ -31,12 +31,12 @@ h3 {
 }
 
 a {
+  border-bottom: 1px solid $color-medium-gray;
   border: 1px solid transparent;
   color: $color-link;
   outline: none;
   padding: .1em;
   text-decoration: none;
-  border-bottom: 1px solid $color-medium-gray;
   transition: all 200ms;
   &:hover {
     color: $color-link-hover;
@@ -44,6 +44,20 @@ a {
   &:focus {
     border: 1px solid rgba(81, 203, 238, 1);
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  }
+}
+
+button {
+  -webkit-appearance: none;
+  background-color: $color-link;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: .5px;
+  padding: 10px;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $color-link-hover;
   }
 }
 
