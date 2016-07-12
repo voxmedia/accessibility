@@ -44,6 +44,7 @@ a {
   padding: .1em;
   text-decoration: none;
   transition: all 200ms;
+  font-weight: 800;
   &:hover {
     color: $color-link-hover;
   }
