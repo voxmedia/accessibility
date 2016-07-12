@@ -54,36 +54,3 @@ p {
 li {
   position: relative;
 }
-
-input[type="checkbox"] {
-  cursor: pointer;
-  height: 10px;
-  left: -20px;
-  opacity: 0;
-  position: absolute;
-  top: 7px;
-  width: 10px;
-  z-index: 1;
-}
-
-label:before {
-  border: 1px solid #3b3b3b;
-  content: '';
-  cursor: pointer;
-  height: 10px;
-  left: -20px;
-  position: absolute;
-  top: 7px;
-  transition: all 200ms;
-  width: 10px;
-}
-
-input[type="checkbox"]:checked + label:before {
-  background: #3b3b3b;
-}
-
-input[type="checkbox"]:focus + label:before {
-  transition: all 200ms;
-  border: 1px solid rgba(81, 203, 238, 1);
-  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-}

@@ -5,4 +5,21 @@
     {{ content }}
     {% include footer.html %}
   </body>
+  <script>
+    var $fixedNav = document.querySelector('.c-nav--sticky');
+    var topOffset = $fixedNav.offsetTop;
+    var fixedClass = 'is-fixed';
+
+    function handleFixedNav () {
+      if(window.pageYOffset > topOffset) {
+        $fixedNav.classList.add(fixedClass);
+      }
+
+      if(window.pageYOffset < topOffset) {
+        $fixedNav.classList.remove(fixedClass);
+      }
+    }
+
+    window.addEventListener('scroll', handleFixedNav, false);
+  </script>
 </html>

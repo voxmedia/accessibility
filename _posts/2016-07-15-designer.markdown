@@ -6,20 +6,25 @@ categories:  docs
 ---
 
 ### Color and Type
-- <input type="checkbox" id="1"><label for="1">Make sure there is enough contrast between text and its background color
+- <label>
+    <input type="checkbox"><b></b>Make sure there is enough contrast between text and its background color
     According to the WCAG, the contrast ratio between text and the text’s background should be at least 4.5 to 1. If your font is at least 24 px or 19 px bold, the minimum drops to 3 to 1 (though, worth noting that this is a little fuzzy because numbered sizes aren’t always reflective of the visual size type). Be especially careful of text over images.
   </label>
 
-- <input type="checkbox" id="2"><label for="2">This guideline helps users with low vision, color blindness, or worsening vision see and read the text on your screen.
+- <label>
+    <input type="checkbox"><b></b>This guideline helps users with low vision, color blindness, or worsening vision see and read the text on your screen.
   </label>
 
-- <input type="checkbox" id="3"><label for="3">Color should not be the only indicator or prompt for important information
+- <label>
+    <input type="checkbox"><b></b>Color should not be the only indicator or prompt for important information
   </label>
 
-- <input type="checkbox" id="4"><label for="4">There should be another indicator (such as icons to accompany color coding, or an underline on linked text) so that people who cannot easily distinguish colors will be able to understand and use your content.
+- <label>
+    <input type="checkbox"><b></b>There should be another indicator (such as icons to accompany color coding, or an underline on linked text) so that people who cannot easily distinguish colors will be able to understand and use your content.
   </label>
 
-- <input type="checkbox" id="5"><label for="5">Pair values of colors together, not only hues, to increase contrast
+- <label>
+  <input type="checkbox"><b></b>Pair values of colors together, not only hues, to increase contrast
     When you strip out the color information from two hues and compare the values, there may not be much difference. Pairing different values creates contrast.
   </label>
 
