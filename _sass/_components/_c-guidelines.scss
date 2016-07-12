@@ -1,16 +1,25 @@
 .c-guidelines {
-
-  label {
-    font-size: 1.25em;
-
-  }
-
   @media(min-width: $break-medium-small) {
     margin-top: 5em;
   }
 
+  label {
+    font-size: 1.25em;
+  }
+
   ul {
     margin-left: 30px;
+  }
+
+  div[id]:before {
+    content: '';
+    display: block;
+    margin-top: -25px;
+    padding-top: 25px;
+    @media(min-width: $break-medium-small) {
+      margin-top: -50px;
+      padding-top: 50px;
+    }
   }
 
   input[type="checkbox"] {
@@ -64,7 +73,5 @@
     font-size: .9em;
     font-weight: 700;
   }
-
-
 }
 
