@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "Process"
+title:  "About this project"
 date:   2016-07-11
 categories:  process
 ---
 
-tk tk tk tk
+In July of 2016, we picked up the project at our annual hack week, <a href="http://product.voxmedia.com/vax">Vax</a>. Over the course of two days, we sketched, wireframed, and built this checklist as a tool for teams to use. We organized the checklist by role because accessibility is everyones responsibility, and should be considered at every stage of making a product.
+
+Read more about our initial meetup on the <a href="http://product.voxmedia.com/2016/5/11/11612516/accessibility-matters-and-heres-what-were-doing-about-it">Vox Product blog</a>.
