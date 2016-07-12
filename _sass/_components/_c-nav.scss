@@ -41,7 +41,7 @@
       z-index: -1;
     }
     &:hover {
-      color: #fff;
+      color: $color-body;
       &:before {
         bottom: 0;
         transition: 200ms bottom;
