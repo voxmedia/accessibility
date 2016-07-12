@@ -83,6 +83,14 @@
     font-size: 14px;
   }
 
+  &__floaty-button {
+    @extend button;
+    position: fixed;
+    display: none;
+    bottom: 20px;
+    left: 20px;
+  }
+
   &__output-label {
     font-size: .9em;
     font-weight: 700;
