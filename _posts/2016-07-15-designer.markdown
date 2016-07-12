@@ -7,7 +7,10 @@ categories:  docs
 
 ### Color and Type
 - <label>
-    <input type="checkbox"><b></b>Make sure there is enough contrast between text and its background color
+    <input type="checkbox"><b></b>
+
+    <h6>Make sure there is enough contrast between text and its background color</h6>
+
     According to the WCAG, the contrast ratio between text and the text’s background should be at least 4.5 to 1. If your font is at least 24 px or 19 px bold, the minimum drops to 3 to 1 (though, worth noting that this is a little fuzzy because numbered sizes aren’t always reflective of the visual size type). Be especially careful of text over images.
   </label>
 

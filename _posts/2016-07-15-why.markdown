@@ -1,8 +1,28 @@
 ---
 layout: post
-title:  "Why does it matter"
+title:  "Our Story"
 date:   2016-07-11
 categories:  why
 ---
 
-tk tk tk tk
+### As journalists, advertisers, producers, and creators, content is at our core at Vox Media. And we want to ensure that everyone—regardless of ability, situation, or context—can access it.
+
+This idea inspired us to outline a few guiding principles to help us convey our philosophy on accessibility. We hope these principles can help continue the conversation on why accessibility matters and encourage us to put what we preach into practice.
+
+### 1. People want to access our content and use our tools; let’s make it easy for them.
+
+We at Vox Media are in the business of producing content that informs our audiences and tools that support our teams, and we need to make it as easy as possible for people to access our work. When we do our jobs well, everyone who wants to enjoy our content and work within our systems can do so. When we don’t do our jobs, we are the ones hindering their access.
+
+### 2. We should never make assumptions about our users.
+
+Making a product accessible does not mean targeting a specific subset of people. Rather, accessible design, or universal design, is about making products usable by the greatest number of people possible. We should not assume we know how our users are engaging with our content, and should understand that it may be "seen" by a number of assistive technologies, including automated tools, keyboard-only navigation, and screen readers.
+
+In addition, applying universal design principles to our process makes the products better for everyone, and improves the experience across the board.
+
+### 3. This is where the industry is going. Get on board or get left behind.
+
+Accessibility may seem like a lofty goal, but it’s really just part of doing good work. And fortunately, accessibility practices are here to stay. Accessibility will eventually be a legal requirement for online properties. Investing in accessibility now will ensure that we’re not playing catch up when U.S. laws adapt.
+
+### 4. Accessibility is everyone’s responsibility.
+
+Accessibility is not a checklist item that only needs to be considered in some projects, or at the end of a process. Rather, these practices should be woven into every step of a project and role in a team. An accessible product stems from everyone on a team owning and shouldering the responsibility. It's part of our jobs as creators.
