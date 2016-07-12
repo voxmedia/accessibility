@@ -87,7 +87,11 @@ new Clipboard('.c-guidelines__copy');
   }
 
   function outputPreview() {
-    if (!active.length) { return false;}
+    if (!active.length) {
+      document.querySelector('.c-guidelines__floaty-button').style.display = "none";
+      return false;
+    }
+    document.querySelector('.c-guidelines__floaty-button').style.display = "block";
     textarea.value = formatPreview(formatters[outputType]);
   }
 
