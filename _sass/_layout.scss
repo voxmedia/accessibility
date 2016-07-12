@@ -1,8 +1,12 @@
 .l-wrapper {
   margin: 0 auto;
   max-width: $page-width;
+  padding: 0 .8em;
 }
 
 .l-segment {
-  margin: 3em .5em;
+  margin: 2em 0;
+  @media(min-width: $break-medium-small) {
+    margin: 3em 0;
+  }
 }

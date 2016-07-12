@@ -3,60 +3,127 @@ function $$(sel) {
   return Array.prototype.slice.call(document.querySelectorAll(sel));
 }
 
+new Clipboard('.c-guidelines__copy');
+
 (function(container){ // write some JS
 
   if (!container) {
     return false;
   }
 
+  var formatters = {
+    github: "\n- [ ] ",
+    markdown: "\n - ",
+    plaintext: "\n"
+  };
+
   var checkboxes = $$('input[type="checkbox"]');
   var textarea = container.querySelector('.preview-box');
-  var outputType = document.getElementById('output').value;
+  var outputType;
+
+  // An active element is an array of 2 strings
+  // the first string is the list item text
+  // the second string is the id of the label wrapping the checkbox
   var active = [];
-  console.log(checkboxes);
+
+  function saveActive() {
+    var serialized = active.map(function(arr) {
+      return arr.join("__");
+    });
+
+    localStorage.setItem('previewSelections', serialized.join('|'));
+  }
+
+  function retrieveActive() {
+    var existing = localStorage.getItem('previewSelections');
+    if (existing) {
+      existing = existing.split('|').map(function(sel){
+        return sel.split("__")
+      });
+    }
+
+    return existing;
+  }
+
+  function highlightCheckboxes() {
+    active.forEach(function(box){
+      document.querySelector('#' + box[1] + ' input').checked = true;
+    })
+  }
+
+  function titleCase(str) {
+    return str.charAt(0).toUpperCase() + str.substr(1);
+  }
 
   function formatPreview(start) {
-    start = start ? start : "";
-    var ret = active.reduce(function(prev, curr, idx){
-      return idx === 0 ? start + prev : prev + start + curr;
+    var activeSection = "";
+
+    return active.reduce(function(prev, curr, idx){
+      var currentSection = curr[1].split("-")[0];
+      var str = "";
+
+      if (activeSection !== currentSection) {
+        activeSection = currentSection;
+        str = "## " + titleCase(currentSection);
+      }
+
+      str += start + curr[0];
+
+      if (outputType !== "plaintext") {
+        str = str + " (More Info)[" + window.location.href + "#" + curr[1] + "]";
+      }
+
+      return idx > 0 ?  prev + str : str;
     }, active[0]);
-    return ret;
   }
 
   function outputPreview() {
     if (!active.length) { return false;}
-    var preview;
-    switch (outputType) {
-      case "github":
-        preview = formatPreview("\n- [ ] ");
-        break;
-      case "markdown":
-        preview = formatPreview("\n - ");
-        break;
-      default:
-        preview = active.join("\n");
-    }
-    textarea.value = preview;
+    textarea.value = formatPreview(formatters[outputType]);
   }
 
   function rebuildActive() {
-    var newActive = []
+    var newActive = [];
     checkboxes.forEach(function(c) {
       if (c.checked) {
-        newActive.push(c.parentNode.querySelector('p').innerText);
+        // [description of the item, id for the label (for anchor links)]
+        var deets = [c.parentNode.querySelector('p').innerText, c.parentNode.id]
+        newActive.push(deets);
       }
     });
     active = newActive;
+    saveActive();
     outputPreview();
   }
 
-  document.getElementById('output').addEventListener('change', function(ev) {
-    outputType = ev.target.value;
-    outputPreview();
-  })
+  $$('[name="output_type"]').forEach(function(input) {
+    if (input.checked) {
+      outputType = input.value;
+    }
 
-  checkboxes.forEach(function(input) {
-    input.addEventListener('change', rebuildActive);
+    input.addEventListener('change', function(ev) {
+      outputType = ev.target.value;
+      outputPreview();
+    });
   });
+
+  checkboxes = checkboxes.map(function(input) {
+    if (input.getAttribute('data-skip')) {
+      return false;
+    }
+
+    input.addEventListener('change', rebuildActive);
+    return input;
+  });
+
+  // On init check localStorage to see if the person
+  // has previously visited, if so return things
+  // to the way they left things
+  var previousSelections = retrieveActive();
+  if (previousSelections) {
+    active = previousSelections;
+    highlightCheckboxes();
+    outputPreview();
+  }
 
  })(document.querySelector('.c-guidelines'))

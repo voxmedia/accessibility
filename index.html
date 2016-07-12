@@ -2,14 +2,20 @@
 layout: default
 ---
 
-<header class="c-header">
+<header class="c-hero">
   <div class="l-wrapper">
     <h1>Accessibility Guidelines</h1>
+  </div>
+</header>
+
+<div class="c-header">
+  <div class="l-wrapper">
+    <h1>The Checklist</h1>
     <p><strong>Check</strong> the boxes of the guidelines that apply to your project<br>
     <strong>Copy</strong> the checklist to your clipboard<br>
     <strong>Paste</strong> the checklist into a document, Slack, Trello—however your team organizes projects.</p>
   </div>
-</header>
+</div>
 
 <nav class="c-nav c-nav--sticky">
   <ul class="c-nav__items">
@@ -35,13 +41,13 @@ layout: default
   {% include output.html %}
 </section>
 
-<header class="c-header">
+<div class="c-header">
   <div class="l-wrapper">
     <h1>Our Philosophy</h1>
     <p>As journalists, advertisers, producers, and creators, content is at our core at Vox Media. And we want to ensure that everyone—regardless of ability, situation, or context—can access it.</p>
     <p>This idea inspired us to outline a few guiding principles to help us convey our philosophy on accessibility. We hope these principles can help continue the conversation on why accessibility matters and encourage us to put what we preach into practice.</p>
   </div>
-</header>
+</div>
 
 <section class="l-wrapper">
   <div class="l-segment">
@@ -51,12 +57,12 @@ layout: default
   </div>
 </section>
 
-<header class="c-header">
+<div class="c-header">
   <div class="l-wrapper">
     <h1>Our Process</h1>
     <p>tk tk tk</p>
   </div>
-</header>
+</div>
 
 <section class="l-wrapper">
   <div class="l-segment">
@@ -66,10 +72,18 @@ layout: default
   </div>
 </section>
 
-<script type="text/javascript">
-  {% include_relative js/list-builder.js %}
-</script>
+<div class="ally-svg">
+  <svg class="ally-svg" xmlns="http://www.w3.org/2000/svg" viewBox="32.8 187.8 221.2 58.4"><path fill="#68963F" d="M254 191.4v25.1L231.8 204l22.2-12.6z"/><path fill="#C7D72C" d="M209.5 191.4v25.1l22.3-12.5-22.3-12.6z"/><path fill="#226A35" d="M231.8 204v25.1l22.2-12.6-22.2-12.5z"/><path fill="#4FB348" d="M231.8 204v25.1l-22.3-12.6 22.3-12.5z"/><g><path d="M32.8 218.1c.4-1.3.7-2.8 1.3-4 1.7-3.4 4.8-5 8.3-5.9 3.7-.9 7.5-.6 11.3-.7v8.4h-2.6c-.6 0-1.2 0-1.8.1-1.7.3-2.6 1.3-2.6 2.9 0 1.5 1 2.7 2.6 2.9 1.2.1 2.5 0 3.7 0 .2 0 .4-.1.6-.1v8.4c-5.2 2.5-13.5 2.4-17.9-2.6-1.6-1.8-2.5-3.9-2.9-6.3 0-.2-.1-.4-.1-.6.1-.7.1-1.6.1-2.5zM190.4 191h14.3c-.1.4-.1.7-.2 1-6.2 14-12.5 27.9-18.7 41.9-1.7 3.7-3.8 7.1-7.2 9.5-3 2.2-6.4 3-10 2.8-2.5-.1-5-.5-7.5-.7v-11.7h1.5c1.9 0 3.7.1 5.6-.1 2.5-.3 4-2 4.9-4.1 2.5-5.5 5-11 7.4-16.6 3.2-7.2 6.4-14.4 9.7-21.6.1-.2.1-.3.2-.4z"/><path d="M70.6 230.9H56.9v-.8-22.9c0-3.3-1.9-5.1-5.2-5.3-4-.3-7 1.6-9.8 4-.3.3-.6.5-1 .9-2.1-2.9-4.3-5.8-6.4-8.7 3.6-3.7 7.6-6.4 12.6-7.4 5.2-1 10.2-.9 15.1 1.5 4.4 2.2 6.9 5.8 7.9 10.5.4 1.8.6 3.7.6 5.5.1 7.4 0 14.8 0 22.2-.1 0-.1.2-.1.5zM90.6 216.3v-16.2h-10v-12.3h23.8v28.5H90.6zM133 200.1h-10.1v-12.3h23.8v28.5H133v-16.2zM79.9 219.4h34.3v11.5H79.9v-11.5zM156.6 219.4v11.5h-34.3v-11.5h34.3zM159.6 191h14.7c2 5.1 4.1 10.3 6.2 15.5-2.6 5.7-5.1 11.4-7.8 17.3-4.5-11-8.8-21.9-13.1-32.8z"/></g></svg>
+</div>
 
 <script type="text/javascript">
   {% include_relative js/clipboard.min.js %}
+</script>
+
+<script type="text/javascript">
+  {% include_relative js/nav-fix.js %}
+</script>
+
+<script type="text/javascript">
+  {% include_relative js/list-builder.js %}
 </script>

@@ -44,12 +44,13 @@ a {
   padding: .1em;
   text-decoration: none;
   transition: all 200ms;
+  font-weight: 800;
   &:hover {
     color: $color-link-hover;
   }
   &:focus {
-    border: 1px solid rgba(81, 203, 238, 1);
-    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid $color-dark-green;
+    box-shadow: 0 2px 8px $color-light-green;
   }
 }
 

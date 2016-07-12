@@ -1,21 +1,20 @@
 .c-nav {
   background-color: $color-body;
   letter-spacing: 1px;
-  margin-bottom: 1em;
   position: absolute;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
   z-index: 10000;
   line-height: 0;
-  @media(max-width: $break-medium-small) {
+  @media(max-width: $break-medium) {
     position: relative;
   }
 
   &.is-fixed {
     position: fixed;
     top: 0;
-    @media(max-width: $break-medium-small) {
+    @media(max-width: $break-medium) {
       position: relative;
     }
   }
@@ -27,6 +26,7 @@
     overflow: hidden;
     padding: 1.5em .8em;
     position: relative;
+    font-weight: 300;
     &:before {
       background-color: $color-link;
       bottom: -100%;
@@ -52,7 +52,7 @@
   &__item {
     display: inline-block;
     margin-bottom: 0;
-    @media(max-width: $break-medium-small) {
+    @media(max-width: $break-medium) {
       border-bottom: 1px solid lighten($color-body, 10%);
       display: block;
     }
