@@ -8,13 +8,20 @@
 }
 
 .c-footer {
+  font-size: 16px;
   background: $color-body;
   color: #fff;
-  padding: 2em 0 .5em;
+  padding: 2em 0 1em;
   a {
     color: $color-link-light;
     &:hover {
       color: $color-link-light-hover;
     }
+  }
+  svg {
+    display: block;
+    margin: 2em 0 0;
+    max-width: 200px;
+    width: 100%;
   }
 }
