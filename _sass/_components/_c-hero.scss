@@ -10,5 +10,8 @@
 
   p {
   	font-size: 1.25em;
+    background: lighten($color-light-green, 35%);
+    line-height: 1.4;
+    display: inline;
   }
 }
