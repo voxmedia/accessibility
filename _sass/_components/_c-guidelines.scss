@@ -75,8 +75,8 @@
   }
 
   textarea {
-    margin: 1em 0;
-    width: 100%;
+    margin: 1em 0 .5em;
+    width: calc(100% - 7px);
     height: 200px;
     font-family: $font-body;
     color: $color-medium-gray;
@@ -86,6 +86,27 @@
   &__output-label {
     font-size: .9em;
     font-weight: 700;
+  }
+
+  &__options {
+    display: inline-block;
+    input {
+      margin-right: .3em;
+      margin-right: .5em;
+      top: -2px;
+      position: relative;
+    }
+    label {
+      margin-right: 5px;
+    }
+    font-size: 12px;
+  }
+
+  &__copy {
+    margin-top: .8em;
+    @media(min-width: $break-medium) {
+      float: right;
+    }
   }
 }
 
