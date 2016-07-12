@@ -18,14 +18,14 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2.25em;
   @media(min-width: $break-medium-small) {
-    font-size: 3.375em;
+    font-size: 3em;
   }
 }
 
 h2 {
   font-size: 1.5em;
   @media(min-width: $break-medium-small) {
-    font-size: 2.25em;
+    font-size: 1.75em;
   }
 }
 
