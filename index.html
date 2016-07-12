@@ -33,10 +33,12 @@ layout: default
   </div>
 </header>
 
-<section class="l-wrapper l-segment">
-  {% for post in site.categories.why %}
-    {{ post.content }}
-  {% endfor %}
+<section class="l-wrapper">
+  <div class="l-segment">
+    {% for post in site.categories.why %}
+      {{ post.content }}
+    {% endfor %}
+  </div>
 </section>
 
 <header class="c-header">
@@ -45,9 +47,11 @@ layout: default
   </div>
 </header>
 
-<section class="l-wrapper l-segment">
-  {% for post in site.categories.process %}
-    {{ post.content }}
-  {% endfor %}
+<section class="l-wrapper">
+  <div class="l-segment">
+    {% for post in site.categories.process %}
+      {{ post.content }}
+    {% endfor %}
+  </div>
 </section>
 
