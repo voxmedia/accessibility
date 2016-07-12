@@ -1,0 +1,15 @@
+.c-hero {
+  background: lighten($color-light-green, 40%);
+  padding: 3.5em 0;
+  color: $color-body;
+  h1 {
+    font-size: 4em;
+    margin-bottom: 0.2em;
+    line-height: 1;
+  }
+
+  p {
+  	font-size: 22px;
+  	text-align: center;
+  }
+}
