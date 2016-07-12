@@ -2,5 +2,135 @@
 
   <h2>Engineers</h2>
 
+  <ul>
+    <li>
+      <label>
+        <input type="checkbox"><b></b>
+        <p>Use the correct HTML element for your content</p>
+      </label>
+      <p>HTML elements communicate to the browser what kind of content they contain and how the browser should render or treat that content. The <a href="https://www.paciellogroup.com/blog/2015/01/the-browser-accessibility-tree/">accessibility tree</a> is built off of assumptions about the elements and their structure. This is the browser feature which powers screen readers. Choosing the correct element for the current context is a simple way to create a good foundation for your experiences.</p>
+      <p>Source: <a href="http://webaim.org/techniques/semanticstructure/">WebAIM</a></p>
+    </li>
+
+    <li>
+      <label>
+        <input type="checkbox"><b></b>
+        <p>Support keyboard navigation</p>
+      </label>
+      <p>Browsers support tabbing through link, form, button elements. This is an easy way to move around the page, but it’s very easy to accidentally hinder this functionality: by relying on CSS to move elements around instead of actually reordering the HTML; hiding elements from tab flow, either by faking buttons (with Javascript) in lieu of using button elements or disabling tab via tabindex=”-1”; and hiding form elements (on a tabbed interface) but not removing them from the tab flow (so that hidden form elements can be focused).
+</p>
+      <p>Source: <a href="http://webaim.org/techniques/keyboard/">WebAIM</a></p>
+    </li>
+
+
+    <li>
+      <label>
+        <input type="checkbox"><b></b>
+        <p>Understand and use HTML landmarks</p>
+      </label>
+      <p>People who use assistive devices may not want to peruse your content linearly, instead preferring to use an outline view (generated from markup) to find the relevant content for their current needs. These landmarks, like main and form and navigation help define specific areas that a user might want to seek out and can save them a lot of time.</p>
+      <p>Source: <a href="http://alistapart.com/column/wai-finding-with-aria-landmark-roles">A List Apart</a></p>
+    </li>
+
+    <li>
+      <label>
+        <input type="checkbox"><b></b>
+        <p>Write good alt text for your images</p>
+      </label>
+      <p>Users with low vision often make use of a talking browser to “read” the web. These specialized browsers convert text to speech so that a user can hear the words on a site. When a talking browser lands on an image, it looks for alt text that it can read aloud; if it finds none, it will often just say “image,” leaving the user in the dark as to what the image is and how it matters to the story. </p>
+      <p>Describe all of the elements that explain what’s happening in the image, rather than just setting the alt text to be something like, “photograph"</p>
+      <p>If you have to use an image of text, be sure to describe the design if relevant, as well as all of the words in the image. (Ex: Whiteboard drawing of the quote “This is a quote”)</p>
+      <p>Source: <a href="http://chorus-blog.voxmedia.com/2015/3/31/8315251/writing-good-alt-text">Vox Media</a></p>
+    </li>
+
+    <li>
+      <label>
+        <input type="checkbox"><b></b>
+        <p>Design focus states to help users navigate and understand where they are</p>
+      </label>
+      <p>Your designs should never actively hide focus states. When people use the keyboard to navigate, your product should include highly visible focus states.</p>
+      <p>Source: <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html">W3C</a></p>
+    </li>
+
+
+    <li>
+      <label>
+        <input type="checkbox"><b></b>
+        <p>Help users understand inputs, and help them avoid and correct mistakes</p>
+      </label>
+      <p>Labels should never completely go away when the focus is inside of an input. Users should always have clear instructions on what they should be inputting. Put error messages in text that explain the error and how to fix the error. Never rely solely on color to indicate errors.</p>
+      <p>Source: <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html">W3C</a></p>
+    </li>
+
+
+
+    <li>
+      <label>
+        <input type="checkbox"><b></b>
+        <p>Use ARIA attributes when applicable</p>
+      </label>
+      <p>ARIA stands for Accessible Rich Internet Applications. It is an optional but helpful spec to define ways to markup HTML that has dynamic experiences (typically controlled by Javascript).</p>
+      <p>
+      The goal when using them is to communicate to the browser and assistive technology how content is going to change or what the purpose of the content is. Dynamic error messages can be called out to screenreaders, buttons can be linked to the content they affect and many other helpful states can be expressed on a code level. </p>
+      <p>Source: <a href="http://heydonworks.com/practical_aria_examples/">Heydon Works</a></p>
+    </li>
+
+    <li>
+      <label>
+        <input type="checkbox"><b></b>
+        <p>Give users a way to skip top level navigation to access main content</p>
+      </label>
+      <p>For keyboard users, it can be helpful to give them a way to skip past top level navigation to get to the main content. This is typically a button at the top of the page (it can only be visible if active), that, when click, shifts the current focus from the button to the top of the main content of the page. This saves the user from having to tab through many many elements of navigation.</p>
+      <p>Source: <a href="http://webaim.org/techniques/skipnav/">WebAIM</a></p>
+    </li>
+
+    <li>
+      <label>
+        <input type="checkbox"><b></b>
+        <p>Make links descriptive</p>
+      </label>
+      <p>Assistive technology is able to find all links on a page and present them in various forms, but these links are rather useless if it’s a long list of links that are just the text “click here.” A better way is to have the link describe where the user will go if they click it, giving them an idea of what’s on the other side of clicking.</p>
+      <p>Source: <a href="https://www.smashingmagazine.com/2012/06/links-should-never-say-click-here/">Smashing Magazine</a></p>
+    </li>
+
+    <li>
+      <label>
+        <input type="checkbox"><b></b>
+        <p>Avoid text in pseudo elements</p>
+      </label>
+      <p>Assistive technology relies on HTML to find the content to present to users. It’s possible to create pseudo-elements with CSS to add content to elements, but this added content is invisible to assistive technology. Therefore, any content added in pseudo-elements should be decorate and non-critical to the user understanding the content, such as icons or wayfinding.</p>
+      <p>Source: <a href="http://simplyaccessible.com/article/three-pitfalls-text-alternatives/">Simply Accessible</a></p>
+    </li>
+
+
+    <li>
+      <label>
+        <input type="checkbox"><b></b>
+        <p>Make SVGs accessible to assistive technology </p>
+      </label>
+      <p>SVGs are often used as icons on interactive elements in sites. When this is the case, the SVG should have a title or embedded text (that is visually hidden but available to assistive tech) to ensure that the information of the icon is available programmatically.</p>
+      <p>Source: <a href="http://www.sitepoint.com/tips-accessible-svg/">Sitepoint</a></p>
+    </li>
+
+
+    <li>
+      <label>
+        <input type="checkbox"><b></b>
+        <p>Hide decorative elements from screen readers</p>
+      </label>
+      <p>Decorative elements, such as dividing lines, pull-quotes, or non-informative icons, can be hidden from screen readers to ensure that a user only receives relevant information as they peruse the page. This is done by adding aria-hidden=”true”  to the element.</p>
+      <p>Source: <a href="https://www.w3.org/WAI/PF/aria/states_and_properties#aria-hidden">W3C</a></p>
+    </li>
+
+
+    <li>
+      <label>
+        <input type="checkbox"><b></b>
+        <p>Create alternate routes for users to access information</p>
+      </label>
+      <p>It can be difficult to make certain components (like an SVG map) into accessible experiences. In those cases, consider creating an additional screen reader-friendly experience, or at the very least, describe the experience to users.</p>
+    </li>
+
+  </ul>
 </div>
 
