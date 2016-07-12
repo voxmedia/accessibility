@@ -7,15 +7,17 @@
   </body>
   <script>
     var $fixedNav = document.querySelector('.c-nav--sticky');
-    var topOffset = $fixedNav.offsetTop;
+    var $guidelinesSection = document.querySelector('.c-guidelines');
+    var startFixedPosition = $fixedNav.offsetTop;
+    var endFixedPosition = $guidelinesSection.offsetTop + $guidelinesSection.offsetHeight;
     var fixedClass = 'is-fixed';
 
     function handleFixedNav () {
-      if(window.pageYOffset > topOffset) {
+      if(window.pageYOffset > startFixedPosition || window.pageYOffset < endFixedPosition) {
         $fixedNav.classList.add(fixedClass);
       }
 
-      if(window.pageYOffset < topOffset) {
+      if(window.pageYOffset < startFixedPosition || window.pageYOffset > endFixedPosition) {
         $fixedNav.classList.remove(fixedClass);
       }
     }
