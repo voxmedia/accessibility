@@ -79,7 +79,7 @@ new Clipboard('.c-guidelines__copy');
       str += start + curr[0];
 
       if (outputType !== "plaintext") {
-        str = str + " (More Info)[" + window.location.href + "#" + curr[1] + "]";
+        str = str + " [More Info](" + window.location.href + "#" + curr[1] + ")";
       }
 
       return idx > 0 ?  prev + str : str;
