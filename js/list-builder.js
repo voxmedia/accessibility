@@ -12,13 +12,17 @@ function $$(sel) {
   var checkboxes = $$('input[type="checkbox"]');
   var textarea = container.querySelector('.preview-box');
   var outputType = document.getElementById('output').value;
+  var includeLinks = document.getElementById('include_links').checked;
   var active = [];
-  console.log(checkboxes);
 
   function formatPreview(start) {
     start = start ? start : "";
     var ret = active.reduce(function(prev, curr, idx){
-      return idx === 0 ? start + prev : prev + start + curr;
+      var str = curr[0];
+      if (includeLinks) {
+        str = str + " (More Info)[" + window.location.href + "#" + curr[1] + "]";
+      }
+      return idx === 0 ? start + str : prev + start + str;
     }, active[0]);
     return ret;
   }
@@ -43,7 +47,8 @@ function $$(sel) {
     var newActive = []
     checkboxes.forEach(function(c) {
       if (c.checked) {
-        newActive.push(c.parentNode.querySelector('p').innerText);
+        var deets = [c.parentNode.querySelector('p').innerText, c.parentNode.id]
+        newActive.push(deets);
       }
     });
     active = newActive;
@@ -53,10 +58,20 @@ function $$(sel) {
   document.getElementById('output').addEventListener('change', function(ev) {
     outputType = ev.target.value;
     outputPreview();
-  })
+  });
 
-  checkboxes.forEach(function(input) {
+  document.getElementById('include_links').addEventListener('change', function(ev) {
+    includeLinks = ev.target.checked;
+    outputPreview();
+  });
+
+  checkboxes = checkboxes.map(function(input) {
+    if (input.getAttribute('data-skip')) {
+      return false;
+    }
+
     input.addEventListener('change', rebuildActive);
+    return input;
   });
 
  })(document.querySelector('.c-guidelines'))
