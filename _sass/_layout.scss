@@ -3,6 +3,11 @@
   max-width: $page-width;
 }
 
+.l-content-wrapper {
+  margin: 0 auto;
+  max-width: $content-width;
+}
+
 .l-segment {
   margin: 3em .5em;
 }
