@@ -36,6 +36,7 @@ a {
   outline: none;
   padding: .1em;
   text-decoration: none;
+  border-bottom: 1px solid $color-medium-gray;
   transition: all 200ms;
   &:hover {
     color: $color-link-hover;

@@ -1,12 +1,18 @@
 @import 'https://fonts.googleapis.com/css?family=Lora:700|Open+Sans:300,700';
 
 // Colors
-$color-body: #292929;
-$color-link: #4d7f38;
+$color-dark-green: #4B7C36;
+$color-light-green: #62A146;
+$color-dark-gray: #292929;
+$color-medium-gray: #555555;
+$color-light-gray: #f5f5f5;
+
+$color-body: $color-dark-gray;
+$color-link: $color-dark-green;
 $color-link-hover: darken($color-link, 20%);
 
-$color-link-light: lighten($color-link, 20%);
-$color-link-light-hover: darken($color-link-light, 10%);
+$color-link-light: $color-light-green;
+$color-link-light-hover: darken($color-light-green, 10%);
 
 // Fonts
 $font-body: 'Open Sans', Helvetica, sans-serif;
