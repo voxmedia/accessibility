@@ -63,7 +63,7 @@
   }
 
   input[type="checkbox"]:checked + b:before {
-    background-color: $color-link-light;
+    background-color: $color-link;
     background-image: url('/assets/check.svg');
     border-color: $color-link;
   }

@@ -1,5 +1,5 @@
 .c-nav {
-  background-color: $color-body;
+  background-color: lighten($color-light-green, 35%);
   letter-spacing: 1px;
   position: absolute;
   text-align: center;
@@ -21,14 +21,14 @@
 
   a {
     border-color: transparent;
-    color: $color-link-light;
+    color: $color-body;
     display: inline-block;
     overflow: hidden;
     padding: 1.5em .8em;
     position: relative;
     font-weight: 300;
     &:before {
-      background-color: $color-link;
+      background-color: lighten($color-light-green, 45%);
       bottom: -100%;
       content: '';
       display: block;
