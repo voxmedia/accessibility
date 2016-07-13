@@ -42,10 +42,6 @@
     z-index: 1;
   }
 
-  b {
-    position: relative;
-  }
-
   b:before {
     border: 1px solid #979797;
     content: '';
@@ -81,6 +77,7 @@
     font-family: $font-body;
     color: $color-medium-gray;
     font-size: 14px;
+    border: 1px solid lighten($color-medium-gray, 50%);
   }
 
   &__floaty-button {
