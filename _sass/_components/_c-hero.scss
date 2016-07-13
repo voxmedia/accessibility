@@ -21,16 +21,31 @@
     position: absolute;
     top: 20px;
     right: 20px;
+
     a:first-of-type {
-      margin-right: 10px;
+      margin-right: 25px;
+    }
+    a {
+      color: $color-dark-gray;
+      outline: none;
+      padding: .1em;
+      transition: all 200ms;
+      font-weight: 800;
+      text-decoration: none;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: .8em;
+      border-bottom: 1px solid transparent;
+    }
+
+    a:hover {
+      color: $color-medium-gray;
     }
     @media(max-width: $break-medium-small) {
-      text-align: center;
       position: static;
       top: 10px;
       right: auto;
-      margin-top: -1.5em;
-      margin-bottom: 1.5em;
+      margin: -1.5em 0 1.5em .8em;
     }
   }
 }

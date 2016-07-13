@@ -1,7 +1,7 @@
 body {
   color: $color-body;
   font-family: $font-body;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 300;
   line-height: 1.2;
   @media(min-width: $break-medium-small) {
@@ -59,10 +59,14 @@ button {
   border: 0;
   color: #fff;
   cursor: pointer;
+  font-size: .8em;
+  font-weight: 300;
+  font-family: inherit;
   letter-spacing: .5px;
   padding: 10px;
   text-transform: uppercase;
   &:hover {
+    color: #fff;
     background-color: $color-link-hover;
   }
 }
@@ -74,7 +78,10 @@ p {
 
 li {
   position: relative;
-  margin-bottom: 1em;
+  margin-bottom: 1.7em;
+  @media(min-width: $break-medium-small) {
+    margin-bottom: 1em;
+  }
 }
 
 strong {
