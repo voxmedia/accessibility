@@ -59,10 +59,14 @@ button {
   border: 0;
   color: #fff;
   cursor: pointer;
+  font-size: .8em;
+  font-weight: 300;
+  font-family: inherit;
   letter-spacing: .5px;
   padding: 10px;
   text-transform: uppercase;
   &:hover {
+    color: #fff;
     background-color: $color-link-hover;
   }
 }

@@ -31,7 +31,6 @@
     }
   }
 
-
   input[type="checkbox"] {
     cursor: pointer;
     height: 15px;
@@ -63,7 +62,7 @@
   }
 
   input[type="checkbox"]:checked + b:before {
-    background-color: $color-link-light;
+    background-color: $color-link;
     background-image: url('/assets/check.svg');
     border-color: $color-link;
   }
@@ -75,9 +74,10 @@
   }
 
   textarea {
-    margin: 1em 0 .5em;
-    width: calc(100% - 7px);
-    height: 200px;
+    margin: 0.5em 0 .5em 0;;
+    padding: 1em;
+    width: calc(100% - 30px);
+    height: 300px;
     font-family: $font-body;
     color: $color-medium-gray;
     font-size: 14px;
@@ -89,6 +89,7 @@
     display: none;
     bottom: 20px;
     left: 20px;
+    z-index: 10000;
   }
 
   &__output-label {
@@ -107,14 +108,15 @@
     label {
       margin-right: 5px;
     }
-    font-size: 12px;
+    font-size: 10px;
   }
 
   &__copy {
     margin-top: .8em;
     @media(min-width: $break-medium) {
       float: right;
-    }
+      margin-top: 0;
+      }
   }
 }
 
