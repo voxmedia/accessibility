@@ -5,6 +5,8 @@ date:   2016-07-11
 categories:  why
 ---
 
+This idea inspired us to outline a few guiding principles to help us convey our philosophy on accessibility. We hope these principles can help continue the conversation on why accessibility matters and encourage us to put what we preach into practice.
+
 ### 1. People want to access our content and use our tools; let’s make it easy for them.
 
 We at Vox Media are in the business of producing content that informs our audiences and tools that support our teams, and we need to make it as easy as possible for people to access our work. When we do our jobs well, everyone who wants to enjoy our content and work within our systems can do so. When we don’t do our jobs, we are the ones hindering their access.
