@@ -6,7 +6,7 @@
   var navState = false;
   var hasScrolled = false;
 
-  function navEvent() {
+  function navStateEvent() {
     var ev = new CustomEvent("navStateChange", {
       detail: {
         active: navState
@@ -15,16 +15,25 @@
     document.dispatchEvent(ev);
   }
 
+  function navHighlightEvent() {
+    var ev = new Event("navHighlightScroll", {"cancelable": false});
+    document.dispatchEvent(ev);
+  }
+
   function checkNavPosition () {
     var Y = window.pageYOffset;
     if (!navState && (Y > startFixedPosition || Y < endFixedPosition)) {
       navState = true;
-      navEvent();
+      navStateEvent();
+    }
+
+    if (navState && Y > startFixedPosition || Y < endFixedPosition) {
+      navHighlightEvent();
     }
 
     if (navState && (Y < startFixedPosition || Y > endFixedPosition)) {
       navState = false;
-      navEvent();
+      navStateEvent();
     }
   }
 
