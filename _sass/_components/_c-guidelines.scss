@@ -75,7 +75,7 @@
   }
 
   textarea {
-    margin: 1em 0 .5em;
+    margin: 0.5em 0 .5em 0;;
     padding: 1em;
     width: calc(100% - 30px);
     height: 300px;
@@ -108,14 +108,15 @@
     label {
       margin-right: 5px;
     }
-    font-size: 12px;
+    font-size: 10px;
   }
 
   &__copy {
     margin-top: .8em;
     @media(min-width: $break-medium) {
       float: right;
-    }
+      margin-top: 0;
+      }
   }
 }
 
