@@ -23,8 +23,8 @@
   div[id]:before {
     content: '';
     display: block;
-    margin-top: -25px;
-    padding-top: 25px;
+    margin-top: -60px;
+    padding-top: 60px;
     @media(min-width: $break-medium-small) {
       margin-top: -50px;
       padding-top: 50px;
