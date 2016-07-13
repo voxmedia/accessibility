@@ -1,8 +1,18 @@
-function $$(sel) {
+// if optional element is provided, the selector will be scoped
+// to the element, otherwise the document is queried
+// results are returned as an Array not an HTMLObject
+function $$(sel, el) {
   // turn this into an array for easier loopability
-  return Array.prototype.slice.call(document.querySelectorAll(sel));
+  var results;
+  if (el) {
+    results = el.querySelectorAll(sel);
+  } else {
+    results = document.querySelectorAll(sel);
+  }
+  return Array.prototype.slice.call(results);
 }
 
+// instantiate the copy button
 new Clipboard('.c-guidelines__copy');
 
 (function(container){ // write some JS
@@ -84,8 +94,27 @@ new Clipboard('.c-guidelines__copy');
         str = str + " [More Info](" + window.location.href + "#" + curr[1] + ")";
       }
 
+      // if there is extra elements
+      if (curr[2]) {
+        str += curr[2];
+      }
+
       return idx > 0 ?  prev + str : str;
     }, active[0]);
+  }
+
+  function formatExtraLinks(el) {
+    var links = $$('a', el);
+    var start = formatters[outputType];
+    var result = [];
+    links.forEach(function(link) {
+      if (outputType === 'plaintext') {
+        result.push(start + link.innerText + ': ' + link.href);
+      } else {
+        result.push(start + '[' + link.innerText + '](' + link.href + ')');
+      }
+    });
+    return result.join();
   }
 
   function outputPreview() {
@@ -99,8 +128,13 @@ new Clipboard('.c-guidelines__copy');
     var newActive = [];
     checkboxes.forEach(function(c) {
       if (c.checked) {
-        // [description of the item, id for the label (for anchor links)]
-        var deets = [c.parentNode.querySelector('p').innerText, c.parentNode.id]
+        var extra = null;
+
+        if (c.getAttribute('data-include-links')) {
+          extra = formatExtraLinks(document.querySelector(c.getAttribute('data-include-links')));
+        }
+        // [description of the item, id for the label (for anchor links), extra info]
+        var deets = [c.parentNode.querySelector('p').innerText, c.parentNode.id, extra]
         newActive.push(deets);
       }
     });
@@ -144,7 +178,7 @@ new Clipboard('.c-guidelines__copy');
   if (previousSelections) {
     active = previousSelections;
     highlightCheckboxes();
-    outputPreview();
+    rebuildActive();
   }
 
  })(document.querySelector('.c-guidelines'))
