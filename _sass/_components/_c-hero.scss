@@ -17,4 +17,20 @@
     line-height: 1.4;
     display: inline;
   }
+  &__links {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    a:first-of-type {
+      margin-right: 10px;
+    }
+    @media(max-width: $break-medium-small) {
+      text-align: center;
+      position: static;
+      top: 10px;
+      right: auto;
+      margin-top: -1.5em;
+      margin-bottom: 1.5em;
+    }
+  }
 }
