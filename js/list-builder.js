@@ -16,7 +16,8 @@ new Clipboard('.c-guidelines__copy');
     editorial: "Editorial",
     engineers: "Engineers",
     project: "Project Managers",
-    qa: "Quality Assurance"
+    qa: "Quality Assurance",
+    tools: "Tools"
   }
 
   var formatters = {
