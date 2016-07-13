@@ -21,11 +21,11 @@ layout: default
 
 <nav class="c-nav c-nav--sticky">
   <ul class="c-nav__items">
-    <li class="c-nav__item"><a href="#designers">Designers</a></li>
-    <li class="c-nav__item"><a href="#engineers">Engineers</a></li>
-    <li class="c-nav__item"><a href="#pm">Project Managers</a></li>
-    <li class="c-nav__item"><a href="#qa">QA</a></li>
-    <li class="c-nav__item"><a href="#editorial">Editorial</a></li>
+    <li class="c-nav__item"><a data-nav="designers" href="#designers">Designers</a></li>
+    <li class="c-nav__item"><a data-nav="engineers" href="#engineers">Engineers</a></li>
+    <li class="c-nav__item"><a data-nav="pm" href="#pm">Project Managers</a></li>
+    <li class="c-nav__item"><a data-nav="qa" href="#qa">QA</a></li>
+    <li class="c-nav__item"><a data-nav="editorial" href="#editorial">Editorial</a></li>
   </ul>
 </nav>
 
@@ -84,16 +84,8 @@ layout: default
 
 <script type="text/javascript">
   {% include_relative js/clipboard.min.js %}
-</script>
-
-<script type="text/javascript">
+  {% include_relative js/global-helpers.js %}
   {% include_relative js/scrollHandling.js %}
-</script>
-
-<script type="text/javascript">
   {% include_relative js/navbar.js %}
-</script>
-
-<script type="text/javascript">
   {% include_relative js/list-builder.js %}
 </script>

@@ -40,7 +40,8 @@
       width: 100%;
       z-index: -1;
     }
-    &:hover {
+    &:hover,
+    &.is-active {
       color: $color-body;
       &:before {
         bottom: 0;
