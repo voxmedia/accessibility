@@ -27,6 +27,7 @@ new Clipboard('.c-guidelines__copy');
 
   var checkboxes = $$('input[type="checkbox"]');
   var textarea = container.querySelector('.preview-box');
+  var floatyButton = document.querySelector('.c-guidelines__floaty-button');
   var outputType;
 
   // An active element is an array of 2 strings
@@ -88,10 +89,8 @@ new Clipboard('.c-guidelines__copy');
 
   function outputPreview() {
     if (!active.length) {
-      document.querySelector('.c-guidelines__floaty-button').style.display = "none";
       return false;
     }
-    document.querySelector('.c-guidelines__floaty-button').style.display = "block";
     textarea.value = formatPreview(formatters[outputType]);
   }
 
@@ -108,6 +107,14 @@ new Clipboard('.c-guidelines__copy');
     saveActive();
     outputPreview();
   }
+
+  document.addEventListener('navStateChange', function(ev) {
+    if (ev.detail.active && active.length) {
+      floatyButton.style.display = "block";
+    } else if (!ev.detail.active) {
+      floatyButton.style.display = "none";
+    }
+  });
 
   $$('[name="output_type"]').forEach(function(input) {
     if (input.checked) {
