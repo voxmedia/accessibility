@@ -65,6 +65,7 @@ button {
   padding: 10px;
   text-transform: uppercase;
   &:hover {
+    color: #fff;
     background-color: $color-link-hover;
   }
 }
