@@ -81,6 +81,7 @@
     font-family: $font-body;
     color: $color-medium-gray;
     font-size: 14px;
+    border: 1px solid lighten($color-medium-gray, 50%);
   }
 
   &__floaty-button {
