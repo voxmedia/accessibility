@@ -80,22 +80,24 @@
     border: 1px solid lighten($color-medium-gray, 50%);
   }
 
-  &__floaty-button {
-    @extend button;
-    position: fixed;
-    display: none;
-    bottom: 20px;
-    left: 20px;
-    z-index: 10000;
+  &__preview {
+    label {
+      font-size: 1em;
+    }
   }
 
-  &__output-label {
-    font-size: .9em;
-    font-weight: 700;
+  &__floaty-button {
+    @extend button;
+    bottom: 20px;
+    display: none;
+    left: 20px;
+    position: fixed;
+    z-index: 10000;
   }
 
   &__options {
     display: inline-block;
+    font-size: .8em;
     input {
       margin-right: .3em;
       margin-right: .5em;
@@ -105,7 +107,6 @@
     label {
       margin-right: 5px;
     }
-    font-size: 10px;
   }
 
   &__copy {
