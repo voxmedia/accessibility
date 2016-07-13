@@ -36,19 +36,16 @@
       text-transform: uppercase;
       font-size: .8em;
       border-bottom: 1px solid transparent;
-
     }
 
     a:hover {
       color: $color-medium-gray;
     }
     @media(max-width: $break-medium-small) {
-      text-align: center;
       position: static;
       top: 10px;
       right: auto;
-      margin-top: -1.5em;
-      margin-bottom: 1.5em;
+      margin: -1.5em 0 .8em 1.5em;
     }
   }
 }
