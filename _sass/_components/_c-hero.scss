@@ -26,7 +26,7 @@
       margin-right: 25px;
     }
     a {
-      color: #292929;
+      color: $color-dark-gray;
       outline: none;
       padding: .1em;
       transition: all 200ms;
@@ -37,6 +37,10 @@
       font-size: .8em;
       border-bottom: 1px solid transparent;
 
+    }
+
+    a:hover {
+      color: $color-medium-gray;
     }
     @media(max-width: $break-medium-small) {
       text-align: center;
