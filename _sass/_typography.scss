@@ -65,9 +65,11 @@ button {
   letter-spacing: .5px;
   padding: 10px;
   text-transform: uppercase;
+  transition: 200ms background-color;
   &:hover {
     color: #fff;
     background-color: $color-link-hover;
+    transition: 200ms background-color;
   }
 }
 
