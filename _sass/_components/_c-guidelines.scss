@@ -76,8 +76,9 @@
 
   textarea {
     margin: 1em 0 .5em;
-    width: calc(100% - 7px);
-    height: 200px;
+    padding: 1em;
+    width: calc(100% - 30px);
+    height: 300px;
     font-family: $font-body;
     color: $color-medium-gray;
     font-size: 14px;
