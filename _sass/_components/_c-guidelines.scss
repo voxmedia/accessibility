@@ -31,7 +31,6 @@
     }
   }
 
-
   input[type="checkbox"] {
     cursor: pointer;
     height: 15px;
@@ -90,6 +89,7 @@
     display: none;
     bottom: 20px;
     left: 20px;
+    z-index: 10000;
   }
 
   &__output-label {
