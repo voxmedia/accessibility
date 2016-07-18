@@ -17,11 +17,9 @@
         <input type="checkbox"><b></b>
         <p>Support keyboard navigation</p>
       </label>
-      <p>Browsers support tabbing through link, form, button elements. This is an easy way to move around the page, but it’s very easy to accidentally hinder this functionality: by relying on CSS to move elements around instead of actually reordering the HTML; hiding elements from tab flow, either by faking buttons (with Javascript) in lieu of using button elements or disabling tab via tabindex=”-1”; and hiding form elements (on a tabbed interface) but not removing them from the tab flow (so that hidden form elements can be focused).
-</p>
+      <p>Browsers support tabbing through link, form, button elements. This is an easy way to move around the page, but it’s very easy to accidentally hinder this functionality: by relying on CSS to move elements around instead of actually reordering the HTML; hiding elements from tab flow, either by faking buttons (with Javascript) in lieu of using button elements or disabling tab via tabindex=”-1”; and hiding form elements (on a tabbed interface) but not removing them from the tab flow (so that hidden form elements can be focused).</p>
       <p>Source: <a href="http://webaim.org/techniques/keyboard/">WebAIM</a></p>
     </li>
-
 
     <li>
       <label id="engineers-3">
@@ -52,7 +50,6 @@
       <p>Source: <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html">W3C</a></p>
     </li>
 
-
     <li>
       <label id="engineers-6">
         <input type="checkbox"><b></b>
@@ -61,8 +58,6 @@
       <p>Labels should never completely go away when the focus is inside of an input. Users should always have clear instructions on what they should be inputting. Put error messages in text that explain the error and how to fix the error. Never rely solely on color to indicate errors.</p>
       <p>Source: <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html">W3C</a></p>
     </li>
-
-
 
     <li>
       <label id="engineers-7">
@@ -102,7 +97,6 @@
       <p>Source: <a href="http://simplyaccessible.com/article/three-pitfalls-text-alternatives/">Simply Accessible</a></p>
     </li>
 
-
     <li>
       <label id="engineers-11">
         <input type="checkbox"><b></b>
@@ -111,7 +105,6 @@
       <p>SVGs are often used as icons on interactive elements in sites. When this is the case, the SVG should have a title or embedded text (that is visually hidden but available to assistive tech) to ensure that the information of the icon is available programmatically.</p>
       <p>Source: <a href="http://www.sitepoint.com/tips-accessible-svg/">Sitepoint</a></p>
     </li>
-
 
     <li>
       <label id="engineers-12">
@@ -122,7 +115,6 @@
       <p>Source: <a href="https://www.w3.org/WAI/PF/aria/states_and_properties#aria-hidden">W3C</a></p>
     </li>
 
-
     <li>
       <label id="engineers-13">
         <input type="checkbox"><b></b>
@@ -131,6 +123,14 @@
       <p>It can be difficult to make certain components (like an SVG map) into accessible experiences. In those cases, consider creating an additional screen reader-friendly experience, or at the very least, describe the experience to users.</p>
     </li>
 
+    <li>
+      <label id="engineers-14">
+        <input type="checkbox"><b></b>
+        <p>Never remove outlines on links</p>
+      </label>
+      <p>The outline property indicates when an element or selected or has focus. This is helpful to users who don't have the ability to use a mouse or are visually impaired.</p>
+      <p>Source: <a href="http://webaim.org/blog/plague-of-outline-0/">WebAIM</a></p>
+    </li>
   </ul>
 </div>
 
