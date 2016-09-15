@@ -47,13 +47,6 @@ layout: default
 
 <div class="c-header">
   <div class="l-wrapper">
-    <h1 id="philosophy">Resources</h1>
-    <p>Lorem</p>
-  </div>
-</div>
-
-<div class="c-header">
-  <div class="l-wrapper">
     <h1 id="philosophy">Our Philosophy</h1>
     <p>As journalists, advertisers, producers, and creators, content is at our core at Vox Media. We want to ensure that everyone—regardless of ability, situation, or context—can access it.</p>
   </div>
@@ -62,6 +55,21 @@ layout: default
 <section class="l-wrapper">
   <div class="l-segment">
     {% for post in site.categories.why %}
+      {{ post.content }}
+    {% endfor %}
+  </div>
+</section>
+
+<div class="c-header">
+  <div class="l-wrapper">
+    <h1 id="philosophy">Resources</h1>
+    <p>We most certainly are not the subject matter experts in terms of the best approcahes to accessibility. Most of the work done by our team is based on a great deal of research and references form talented designers and developer accross the world...</p>
+  </div>
+</div>
+
+<section class="l-wrapper">
+  <div class="l-segment">
+    {% for post in site.categories.resources %}
       {{ post.content }}
     {% endfor %}
   </div>
