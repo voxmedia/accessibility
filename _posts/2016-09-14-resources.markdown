@@ -6,19 +6,17 @@ categories:  resources
 ---
 
 ## Websites
-Web Accessibility in Mind <a href="http://webaim.org/">Webaim</a>
+- Web Accessibility in Mind [Webaim](http://webaim.org/)
 
 ## Courses
-- Web Accessibility: Developing with Empathy <a href="https://www.udacity.com/course/web-accessibility--ud891">Udacity</a>
-- Accessibility <a href="https://teamtreehouse.com/library/accessibility">Treehouse</a>
-- Web Accessibility: Getting Started <a href="https://www.pluralsight.com/courses/web-accessibility-getting-started">Pluralsight</a>
-- Meeting Web Accessibility Guidelines (Section 508/ WCAG 2.0) <a href="https://www.pluralsight.com/courses/web-accessibility-meeting-guidelines">Pluralsight</a>
-
-## Books
+- Web Accessibility: Developing with Empathy [Udacity](https://www.udacity.com/course/web-accessibility--ud891)
+- Accessibility [Treehouse](https://teamtreehouse.com/library/accessibility)
+- Web Accessibility: Getting Started [Pluralsight](https://www.pluralsight.com/courses/web-accessibility-getting-started)
+- Meeting Web Accessibility Guidelines (Section 508/ WCAG 2.0) [Pluralsight](https://www.pluralsight.com/courses/web-accessibility-meeting-guidelines)
 
 ## Newsletters
-- Accessibility Weekly <a href="http://a11yweekly.com/">A11yweekly</a>
-- Wuhcag <a href="https://www.wuhcag.com/">Wuhcag</a>
+- Accessibility Weekly [A11yweekly](http://a11yweekly.com/)
+- Wuhcag [Wuhcag](https://www.wuhcag.com/)
 
 ## People
-- David A. Kennedy <a href="https://twitter.com/davidakennedy">Twitter</a>
+- David A. Kennedy [Twitter](https://twitter.com/davidakennedy)
