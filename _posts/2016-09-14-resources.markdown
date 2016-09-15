@@ -26,5 +26,5 @@ categories:  resources
 
 ## People
 - Alice Boxhall - [Twitter](https://twitter.com/sundress)
-- Rob Doson - [Twitter](https://twitter.com/rob_dodson)
+- Rob Dodson - [Twitter](https://twitter.com/rob_dodson)
 - David A. Kennedy - [Twitter](https://twitter.com/davidakennedy)
