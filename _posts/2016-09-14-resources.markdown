@@ -23,8 +23,3 @@ categories:  resources
 ## Books
 - Design For Real Life - [A Book Apart](https://abookapart.com/products/design-for-real-life)
 - A Web For Everyone - [Rosenfeld](http://rosenfeldmedia.com/books/a-web-for-everyone/)
-
-## People
-- Alice Boxhall - [Twitter](https://twitter.com/sundress)
-- Rob Dodson - [Twitter](https://twitter.com/rob_dodson)
-- David A. Kennedy - [Twitter](https://twitter.com/davidakennedy)
