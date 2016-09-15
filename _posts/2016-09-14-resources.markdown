@@ -5,6 +5,9 @@ date:   2016-09-14
 categories:  resources
 ---
 
+## Websites
+Web Accessibility in Mind <a href="http://webaim.org/">Webaim</a>
+
 ## Courses
 - Web Accessibility: Developing with Empathy <a href="https://www.udacity.com/course/web-accessibility--ud891">Udacity</a>
 - Accessibility <a href="https://teamtreehouse.com/library/accessibility">Treehouse</a>
