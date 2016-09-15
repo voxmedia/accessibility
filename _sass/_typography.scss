@@ -29,6 +29,10 @@ h2 {
   }
 }
 
+.resources h2:not(:first-child) {
+  padding-top: 1.25em;
+}
+
 h3 {
   font-family: $font-body;
   font-size: 1em;
