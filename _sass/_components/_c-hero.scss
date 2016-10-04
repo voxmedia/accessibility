@@ -3,18 +3,18 @@
   padding: 3.5em 0;
   color: $color-body;
   h1 {
-    font-size: 4em;
+    font-size: 3.5em;
     margin-bottom: 0.2em;
     line-height: 1;
     @media(max-width: $break-medium-small) {
-      font-size: 3.2em;
+      font-size: 3em;
     }
   }
 
   p {
   	font-size: 1.25em;
     background: lighten($color-light-green, 35%);
-    line-height: 1.4;
+    line-height: 1.2;
     display: inline;
   }
   &__links {
