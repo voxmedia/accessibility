@@ -24,3 +24,5 @@ categories:  resources
 ## Books
 - Design For Real Life - [A Book Apart](https://abookapart.com/products/design-for-real-life)
 - A Web For Everyone - [Rosenfeld](http://rosenfeldmedia.com/books/a-web-for-everyone/)
+- Inclusive Design Patterns by Heydon Pickering - [Smashing Magazine](https://www.smashingmagazine.com/books/#inclusive-design-patterns)  
+- Accessibility for Everyone by Laura Kalbag - [A Book Apart](https://abookapart.com/products/accessibility-for-everyone)
