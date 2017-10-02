@@ -62,8 +62,23 @@ layout: default
 
 <div class="c-header">
   <div class="l-wrapper">
+    <h1 id="resources">Resources</h1>
+    <p>We most certainly are not experts in terms of the best approaches to accessibility. Most of the work done by our team is based on a great deal of research and references. Below are some of our favorite resources.</p>
+  </div>
+</div>
+
+<section class="l-wrapper">
+  <div class="l-segment resources">
+    {% for post in site.categories.resources %}
+      {{ post.content }}
+    {% endfor %}
+  </div>
+</section>
+
+<div class="c-header">
+  <div class="l-wrapper">
     <h1 id="about">About This Project</h1>
-    <p>This project started back in May of 2016, when six <a href="www.voxmedia.com">Vox Media</a> team members gathered in Washington, D.C., for two days to figure out just how to approach accessibility on a company-wide scale.</p>
+    <p>This project started back in May of 2016, when six <a href="http://www.voxmedia.com">Vox Media</a> team members gathered in Washington, D.C., for two days to figure out just how to approach accessibility on a company-wide scale.</p>
   </div>
 </div>
 

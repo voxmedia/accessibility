@@ -11,7 +11,7 @@ email: voxproduct@voxmedia.com
 description: > # this means to ignore newlines until "baseurl:"
   As journalists, advertisers, producers, and creators, content is at our core at Vox Media. We want to ensure that everyone—regardless of ability, situation, or context—can access it.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://accessibility.voxmedia.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
